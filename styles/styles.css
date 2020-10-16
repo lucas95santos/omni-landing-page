@@ -123,7 +123,12 @@ nav > .container {
     font-family: 'Poppins Regular';
     font-size: 1.625rem;
     letter-spacing: 0.8px;
-    animation: shadow-button 1.2s infinite;;
+    animation: blink 0.8s infinite alternate linear;
+    transition: filter ease-in-out 0.3s;
+}
+
+.header-content__info button:hover {
+    filter: brightness(115%);
 }
 
 @media (max-width: 1366px) {
@@ -157,13 +162,13 @@ nav > .container {
 
 /* keyframes */
 
-@keyframes shadow-button {
+@keyframes blink {
     0% {
         box-shadow: 0 0 8px 4px #00d8c950;
         transform: scale(1);
     }
     100% {
         box-shadow: 0 0 18px 9px #00d8c950;
-        transform: scale(1.01);
+        transform: scale(1.02);
     }
 }
