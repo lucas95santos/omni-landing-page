@@ -90,9 +90,9 @@ nav > .container {
     width: 100%;
     height: 100%;
     padding: 0 32px;
+    padding-top: 16%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
     color: #EFEFEF;
@@ -114,7 +114,7 @@ nav > .container {
 
 .header-content__info button {
     position: absolute;
-    bottom: 16%;
+    bottom: 22%;
     padding: 16px 32px;
     border-radius: 50px;
 
@@ -126,14 +126,9 @@ nav > .container {
     animation: shadow-button 1.2s infinite;;
 }
 
-@keyframes shadow-button {
-    0% {
-        box-shadow: 0 0 8px 4px #00d8c950;
-        transform: scale(1);
-    }
-    100% {
-        box-shadow: 0 0 18px 9px #00d8c950;
-        transform: scale(1.01);
+@media (max-width: 1366px) {
+    .header-content__info button {
+        bottom: 16%;
     }
 }
 
@@ -157,5 +152,18 @@ nav > .container {
     .header-content__info button {
         padding: 12px 24px;
         font-size: 1.375rem;
+    }
+}
+
+/* keyframes */
+
+@keyframes shadow-button {
+    0% {
+        box-shadow: 0 0 8px 4px #00d8c950;
+        transform: scale(1);
+    }
+    100% {
+        box-shadow: 0 0 18px 9px #00d8c950;
+        transform: scale(1.01);
     }
 }
