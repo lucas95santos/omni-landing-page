@@ -22,6 +22,7 @@ nav {
     width: 100%;
     height: 100px;
     z-index: 99;
+    transition: all ease-in-out 0.3s;
 }
 
 nav > .container {
@@ -36,6 +37,8 @@ nav > .container {
 
 .nav-with-background {
     background-color: #0B1632;
+    height: 80px;
+    box-shadow: 0 4px 8px 4px rgba(0,0,0,0.2);
 }
 
 .nav-brand img {
@@ -129,6 +132,36 @@ nav > .container {
 
 .header-content__info button:hover {
     filter: brightness(115%);
+}
+
+.container {
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+#what-we-do {
+    width: 100%;
+    min-height: calc(100vh - 80px);
+}
+
+.what-we-do__title {
+    text-align: center;
+    padding: 64px 0;
+}
+
+.what-we-do__title h3 {
+    color: #0B1632;
+    font-family: 'Poppins Medium';
+    font-size: 2.5rem;
+    letter-spacing: 0.8px;
+    margin-bottom: 32px;
+}
+
+.what-we-do__title h4 {
+    color: #444444;
+    font-family: 'Quicksand Regular';
+    font-size: 1.5rem;
+    letter-spacing: 0.8px;
 }
 
 @media (max-width: 1366px) {
